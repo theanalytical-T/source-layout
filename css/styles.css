@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(244, 248, 253);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 2rem 4rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: inline-block;
+    display: flex;
+    width: 1.5rem;
+    height: .5rem;
+    border-top: 3px solid rgb(53, 67, 88);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 1.5rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(82, 97, 119);
+}
+
+header>h2 {
+    color: rgb(53, 67, 88);
+}
+
+header>a,
+form a {
+    text-decoration: none;
+    background-color: rgb(53, 67, 88);
+    color: #eee;
+    padding: .5rem 1.6rem;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    padding: .5rem 1.6rem;
+    background-color: rgb(220, 226, 237);
+    border-style: none;
+}
+
+.form-n-illustration {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+.form-content {
+    margin: 5rem 10rem;
+    width: 22%;
+}
+
+.form-content span {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: .8rem;
+    color: rgb(129, 143, 163);
+    font-weight: bold;
+}
+
+.form-content h1 {
+    font-size: 2rem;
+    width: 90%;
+    line-height: 2.2rem;
+    color: rgb(53, 67, 88);
+    margin-bottom: 2.5rem;
+}
+
+.form-content p {
+    color: rgb(82, 97, 119);
+    margin-top: 1.5rem;
+}
+
+.features {
+    display: flex;
+    margin: 5rem 10rem;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 20%;
+    color: rgb(53, 67, 88);
+}
+
+.fa-spinner,
+.fa-layer-group,
+.fa-circle-half-stroke,
+.fa-droplet {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: rgb(53, 67, 88);
+}
+
+.fa-angle-right {
+    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(53, 67, 88);
+}
+
+.feature a {
+    color: rgb(53, 67, 88);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.feature p {
+    margin: .8rem 0;
+    color: rgb(53, 67, 88);
+}
+
+.feature section:last-child {
+    margin: 1.5rem 0;
+}
+
+.collecting-info {
+    background-color: white;
+    padding: 5rem 10rem;
+}
+
+.collecting-info section:first-child {
+    width: 42%;
+}
+
+.collecting-info section:first-child h1 {
+    font-size: 2.4rem;
+    color: rgb(53, 67, 88);
+}
+
+.collecting-info section:first-child p {
+    color: rgb(129, 143, 163);
+    margin: 1.5rem 0;
+}
+
+.collecting-info section:last-child h2 {
+    width: 95%;
+    height: 25rem;
+    background-color: rgb(220, 226, 237);
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    header {
+        width: 100%;
+        border-bottom: 1px solid rgb(53, 67, 88);
+    }
+
+    header nav,
+    header>a {
+        display: none;
+    }
+
+    header>h2 {
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .form-content {
+        width: 90%;
+        margin: 1rem 3rem;
+    }
+
+    .form-content p {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input {
+        width: 90%;
+        margin-bottom: .5rem;
+    }
+
+    form a {
+        width: 90%;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    .form-n-illustration {
+        flex-direction: column;
+    }
+
+    .form-n-illustration section:last-child img {
+        width: 100%;
+        padding-left: 3rem;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+        padding: 3rem 0;
+    }
+
+    .feature {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .collecting-info {
+        padding: 4rem 3rem;
+    }
+}
